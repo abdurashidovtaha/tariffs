@@ -1,8 +1,6 @@
 import React from 'react'
 
 export default function Tarif({ tarif }) {
-    let hitClass = "";
-    tarif.hit ? hitClass = "picture" : hitClass = "nothing";
 
     return (
         <div className="tarifs">
