@@ -8,7 +8,7 @@ export default function Tarif({ tarif }) {
         <div className="tarifs">
             <div className="block f">
                 <h4 className="name">{tarif.name}</h4>
-                {tarif.hit && <img src={tarif.hitUrl} className="hit" />}
+                {tarif.hit && <img src={tarif.hitUrl} alt="hitPic" className="hit" />}
                 <p>{tarif.fee && tarif.fee}</p>
                 <div className="price">{tarif.price !== 0 && tarif.price}
                     <div className="right">
@@ -23,7 +23,7 @@ export default function Tarif({ tarif }) {
                 </h3>
                 <span className="internetUnlimit">{tarif.internetUnlimit !== 0 && tarif.internetUnlimit}</span>
                 <div className="socialIcons">
-                    {tarif.socialMedia && tarif.socialMediaIcones.map(o => <img src={o} className="icon" />)}
+                    {tarif.socialMedia && tarif.socialMediaIcones.map(o => <img src={o} alt="mediaIcon" className="icon" />)}
                 </div>
                 <div className="socialMedia">{tarif.socialMedia}</div>
                 <div className="roaming">{tarif.roaming}</div>
