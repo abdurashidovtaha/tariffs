@@ -1,7 +1,7 @@
 import React from 'react'
 import Tarif from '../Tarif/Tarif';
 
-export default function Tariflist(props) {
+export default function TariffList(props) {
     const tarifs = [
         {
             id: 1, name: "Везде онлайн", fee: "", price: 500, rubleSign: "₽", slashTime: "/МЕСЯЦ", hit: true,
